@@ -1,3 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
-    background: linear-gradient(90deg, rgba(4,112,8,1) 26%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 63%, rgba(255,0,0,1) 87%);
+    background-color: #b98024b2;
+    margin: 0%;
+    padding: 0%;
+
+    font-family: Poppins;
+}
+
+header{
+    background-color: rgba(207, 46, 18, 0.726);
+}
+
+.menu{
+    margin: 0%;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+
+    box-shadow: rgba(0, 0, 0, 0.726) 2px 2px 5px;
+}
+
+.menu img{
+    height: 38px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.titulos{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(207, 46, 18);
+    text-shadow: rgb(0, 0, 0) 4px 3px 3px;
+}
+
+.hero-card{
+    text-align: center;
+}
+
+.hero-card button{
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgba(207, 46, 18, 0.726);
+    box-shadow: black 2px 4px 4px;
+}
+
+.hero-card button:hover{
+    background-color: whitesmoke;
+    color: rgb(207, 46, 18);
+}
+
+.hero-card img{
+    height: 550px;
+    width: 100%;
 }
