@@ -43,6 +43,9 @@ header{
 }
 
 .menu{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
     margin: 0%;
     list-style: none;
     font-size: 20px;
@@ -57,8 +60,6 @@ header{
 }
 
 .menu li{
-    display: inline-block;
-    margin-inline-start: 150px;
 }
 
 .menu img{
@@ -91,6 +92,7 @@ header{
 
 .pizzas-container{
     display: block;
+    text-align: center;
 }
 
 
