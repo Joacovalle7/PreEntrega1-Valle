@@ -43,6 +43,14 @@ header{
     background-color: rgba(207, 46, 18, 0.726);
 }
 
+.menu1{
+    display: none;
+}
+
+.menu1-icon {
+    display: none;
+}
+
 .menu{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -59,8 +67,6 @@ header{
 .menu a:hover{
     color: rgb(255, 255, 255);
 }
-
-.menu li{
 }
 
 .menu img{
@@ -136,3 +142,66 @@ header{
     text-align: center;
 }
 
+@media (max-width: 648px) {
+    .hero-card{
+     background-image: none;
+     margin: 0 auto ;
+    }
+    .menu{
+        display: none;
+    }
+
+    }
+    .menu1{
+        display: block;
+    }  
+    .menu1:checked + .menu1-icon + .menu{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        
+        
+    }
+ }
+ 
+
+
+
+/*@media (max-width: 1400px) {
+    body{
+        padding: 20px;
+    }
+    header,main,footer {
+        padding: 20px;
+        text-align: left;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+}
+@media (max-width 1024px) {
+    body{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header,main,footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    h1 { 
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+}
