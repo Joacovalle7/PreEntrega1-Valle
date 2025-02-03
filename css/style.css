@@ -68,6 +68,7 @@ header{
     color: rgb(255, 255, 255);
 }
 
+
 .menu img{
     height: 38px;
 }
@@ -135,25 +136,30 @@ header{
 }
 
 .footer-links {
-    background-color: rgba( 207, 46, 18, 0.726);
+    background-color: rgba(209, 49, 21, 0.726);
     color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
 }
+footer .social-link a {
+    border: none;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
 
 @media (max-width: 648px) {
     .hero-card{
-     background-image: none;
+     background-image: url(../img/mini-banner.jpg);
      margin: 0 auto ;
+     box-shadow: 5px rgba(214, 74, 50, 0.651);
     }
-    .menu{
-        display: none;
-    }
-
-    }
+    
     .menu1{
         display: block;
-    }  
+    }
+    
     .menu1:checked + .menu1-icon + .menu{
         display: flex;
         flex-direction: column;
@@ -161,46 +167,10 @@ header{
         
         
     }
- }
+    .menu{
+        display: none;
+    }
+
+    }  
+} 
  
-
-
-
-/*@media (max-width: 1400px) {
-    body{
-        padding: 20px;
-    }
-    header,main,footer {
-        padding: 20px;
-        text-align: left;
-    }
-    h1 {
-        font-size: 2em;
-    }
-    h2{
-        font-size: 1.5em;
-    }
-    p {
-        font-size: 1.2em;
-    }
-}
-@media (max-width 1024px) {
-    body{
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    header,main,footer {
-        display: flex;
-        justify-content: space-between;
-        padding: 30px;
-    }
-    h1 { 
-        font-size: 2.5em;
-    }
-    h2 {
-        font-size: 2em;
-    }
-    p{
-        font-size: 1.5em;
-    }
-}
