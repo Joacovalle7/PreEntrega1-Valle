@@ -144,6 +144,7 @@ footer .social-link a {
 
     .menu1 {
         display: block;
+        opacity: 0;
     }
 
     .menu1:checked + .menu1-icon + .menu {
@@ -165,14 +166,14 @@ footer .social-link a {
         padding-bottom: 20px;
     }
 
-    .menu {
-        display: none;
-    }
-
     .menu1 {
         display: block;
     }
 
+    .menu {
+        display: none;
+    }
+    
     .menu1:checked + .menu1-icon + .menu {
         display: flex;
         flex-direction: column;
