@@ -41,6 +41,7 @@ header {
 
 .menu1 {
     display: none;
+    opacity: 0;
 }
 
 .menu1-icon {
@@ -143,8 +144,11 @@ footer .social-link a {
     }
 
     .menu1 {
-        display: block;
-        opacity: 0;
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 999;        
     }
 
     .menu1:checked + .menu1-icon + .menu {
@@ -155,6 +159,18 @@ footer .social-link a {
 
     .menu {
         display: none;
+    }
+
+    .menu1-icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 50%;
+    }
+
+    .menu1:checked + .menu1-icon {
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -167,7 +183,97 @@ footer .social-link a {
     }
 
     .menu1 {
-        display: block;
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .menu1:checked + .menu1-icon + .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .pizzas-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .pizzas-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-links {
+        padding: 15px;
+    }
+
+    .footer-links p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 375px) {
+    .hero-card {
+        height: 450px;
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .menu1 {
+        display: inline-block;
     }
 
     .menu {
