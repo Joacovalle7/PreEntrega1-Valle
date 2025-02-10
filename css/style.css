@@ -148,7 +148,6 @@ footer .social-link a {
     
     .menu1 {
         display: inline-block;
-        position: absolute;
         top: 10px;
         right: 20px;
         z-index: 999;     
@@ -172,9 +171,9 @@ footer .social-link a {
         display: block;
         cursor: pointer;
         position: absolute;
-        top: 10px;
+        top: 0.5px;
         right: 50%;
-        color: whitesmoke;
+        color: rgb(0, 0, 0);
     }
 
     .menu1:checked + .menu1-icon {
@@ -182,12 +181,12 @@ footer .social-link a {
     }
 
     .ubi-main {
-        display: flex;
+        display: grid;
         align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content:center ;
+        justify-items: center;
     }
+
 }
 
 @media (max-width: 415px) {
@@ -229,60 +228,33 @@ footer .social-link a {
         height: auto;
     }
 
+
+    .ubi-main {
+        display: grid;
+        align-items: center;
+        justify-content:center ;
+        justify-items: center;
+    }
+
+    .ubi-card iframe {
+        height: 250px;
+        width: 350px;
+    }
+
+    .ubi-card {
+        border: 2px solid coral;
+        height: 250px;
+        width: 350px;
+        margin: 10px;
+        display: inline-block;
+}
+
     .footer-links {
         padding: 15px;
     }
 
     .footer-links p {
         font-size: 14px;
-    }
-}
-
-@media (max-width: 360px) {
-    .hero-card {
-        height: 400px; 
-        font-size: 20px; 
-        padding-bottom: 15px;
-    }
-
-    .menu1 {
-        display: inline-block;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .menu1:checked + .menu1-icon + .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .menu a {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .pizzas-card {
-        width: 100%; 
-        margin: 10px 0;
-        font-size: 16px; 
-    }
-
-    .pizzas-card img {
-        width: 100%;
-        height: auto;
-    }
-
-    .footer-links {
-        padding: 12px;
-    }
-
-    .footer-links p {
-        font-size: 12px;
     }
 }
 
@@ -325,6 +297,19 @@ footer .social-link a {
         height: auto;
     }
 
+    .ubi-card iframe {
+        height: 200px;
+        width: 300px;
+    }
+
+    .ubi-card {
+        border: 2px solid coral;
+        height: 200px;
+        width: 300px;
+        margin: 10px;
+        display: inline-block;
+}
+
     .footer-links {
         padding: 15px;
     }
@@ -333,3 +318,65 @@ footer .social-link a {
         font-size: 14px;
     }
 }
+@media (max-width: 360px) {
+    .hero-card {
+        height: 400px; 
+        font-size: 20px; 
+        padding-bottom: 15px;
+    }
+
+    .menu1 {
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu1:checked + .menu1-icon + .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .pizzas-card {
+        width: 100%; 
+        margin: 10px 0;
+        font-size: 16px; 
+    }
+
+    .pizzas-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .ubi-card iframe {
+        height: 150px;
+        width: 250px;
+    }
+
+    .ubi-card {
+        border: 2px solid coral;
+        height: 150px;
+        width: 250px;
+        margin: 10px;
+        display: inline-block;
+}
+
+    .footer-links {
+        padding: 12px;
+    }
+
+    .footer-links p {
+        font-size: 12px;
+    }
+}
+
+
