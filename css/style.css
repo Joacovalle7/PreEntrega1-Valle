@@ -106,12 +106,16 @@ header {
     color: whitesmoke;
     height: 500px;
     width: 400px;
-    text-align: center;
 }
+
+.pizzas-card p{
+padding: 5%;
+}
+
 
 .pizzas-card img {
     height: 200px;
-    width: 400px;
+    width: 397px;
 }
 
 .ubi-main {
@@ -378,5 +382,3 @@ footer .social-link a {
         font-size: 12px;
     }
 }
-
-
