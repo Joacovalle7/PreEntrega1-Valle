@@ -1,3 +1,50 @@
+@media (max-width: 648px) {
+    main {
+    .menu1 {
+        display: inline-block;
+        top: 10px;
+        right: 20px;
+        z-index: 999;     
+    }
+    .hero-card {
+        margin: 0 auto;
+        box-shadow: 5px rgba(214, 74, 50, 0.651);
+    }
+    
+    .menu1:checked + .menu1-icon + .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu1-icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 0.5px;
+        right: 50%;
+        color: rgb(0, 0, 0);
+    }
+
+    .menu1:checked + .menu1-icon {
+        color: rgb(0, 0, 0);
+    }
+
+    .ubi-main {
+        display: grid;
+        align-items: center;
+        justify-content:center ;
+        justify-items: center;
+    }
+
+    }
+}
+
+
 @media (max-width: 415px) {
     main{
         .hero-card {
@@ -55,7 +102,8 @@
                 width: 350px;
             }
         }
-}
+    }
+
     footer {
         .footer-links {
             padding: 15px;
@@ -65,3 +113,77 @@
         }
     }
 }
+
+@media (max-width: 360px) {
+    main{
+    .hero-card {
+        height: 400px; 
+        font-size: 20px; 
+        padding-bottom: 15px;
+    }
+
+    .menu1 {
+        display: inline-block;
+        a {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu1:checked + .menu1-icon + .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    
+    .pizzas-card {
+        width: 100%; 
+        margin: 10px 0;
+        font-size: 16px; 
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .ubi-card {
+        border: 2px solid coral;
+        height: 150px;
+        width: 250px;
+        margin: 10px;
+        display: inline-block;
+        iframe {
+            height: 150px;
+            width: 250px;
+        }
+    }
+    }
+
+    footer {
+    .footer-links {
+        padding: 12px;
+        p {
+            font-size: 12px;
+        }
+    }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
