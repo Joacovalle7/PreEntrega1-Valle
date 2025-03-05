@@ -159,25 +159,21 @@ main .ubi-card {
 }
 
 @media (max-width: 648px) {
-  main .menu1 {
+  header nav .menu1 {
     display: inline-block;
     top: 10px;
     right: 20px;
     z-index: 999;
   }
-  main .hero-card {
-    margin: 0 auto;
-    box-shadow: 5px rgba(214, 74, 50, 0.651);
-  }
-  main .menu1:checked + .menu1-icon + .menu {
+  header nav .menu1:checked + .menu1-icon + .menu {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  main .menu {
+  header nav .menu {
     display: none;
   }
-  main .menu1-icon {
+  header nav .menu1-icon {
     display: block;
     cursor: pointer;
     position: absolute;
@@ -185,8 +181,12 @@ main .ubi-card {
     right: 50%;
     color: rgb(0, 0, 0);
   }
-  main .menu1:checked + .menu1-icon {
+  header nav .menu1:checked + .menu1-icon {
     color: rgb(0, 0, 0);
+  }
+  main .hero-card {
+    margin: 0 auto;
+    box-shadow: 5px rgba(214, 74, 50, 0.651);
   }
   main .ubi-main {
     display: grid;
@@ -196,28 +196,28 @@ main .ubi-card {
   }
 }
 @media (max-width: 415px) {
-  main .hero-card {
-    height: 450px;
-    font-size: 24px;
-    text-align: center;
-    padding-bottom: 20px;
-  }
-  main .menu1 {
+  header nav .menu1 {
     display: inline-block;
   }
-  main .menu1 a {
+  header nav .menu1 a {
     font-size: 16px;
     padding: 8px;
   }
-  main .menu {
+  header nav .menu {
     display: none;
   }
-  main .menu1:checked + .menu1-icon + .menu {
+  header nav .menu1:checked + .menu1-icon + .menu {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     padding: 10px 0;
+  }
+  main .hero-card {
+    height: 450px;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 20px;
   }
   main .pizzas-card {
     width: 90%;
@@ -252,27 +252,27 @@ main .ubi-card {
   }
 }
 @media (max-width: 360px) {
-  main .hero-card {
-    height: 400px;
-    font-size: 20px;
-    padding-bottom: 15px;
-  }
-  main .menu1 {
+  header nav .menu1 {
     display: inline-block;
   }
-  main .menu1 a {
+  header nav .menu1 a {
     font-size: 14px;
     padding: 8px;
   }
-  main .menu {
+  header nav .menu {
     display: none;
   }
-  main .menu1:checked + .menu1-icon + .menu {
+  header nav .menu1:checked + .menu1-icon + .menu {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     padding: 10px 0;
+  }
+  main .hero-card {
+    height: 400px;
+    font-size: 20px;
+    padding-bottom: 15px;
   }
   main .pizzas-card {
     width: 100%;
